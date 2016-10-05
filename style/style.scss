@@ -1,0 +1,94 @@
+@import 'https://fonts.googleapis.com/css?family=Unica+One|Muli|Yatra+One|Quattrocento';
+/* colors */
+$opaque-panel: rgba(0,25,40,0.85);
+$serif-font: 'Quattrocento', 'Georgia', serif;
+
+@mixin panel {
+    background-color:$opaque-panel;
+    color:white;
+}
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    background: {
+        image: url("/img/BGgrime.jpg");
+        repeat: no-repeat;
+        position: top center;
+        attach: fixed;
+        color:#014;
+    }
+    font-family:$serif-font;
+    padding: 0;
+    margin: 0;
+}
+
+#topName {
+    @include panel;
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+    h1 {
+        font-family: 'Unica One', cursive;
+        font-size: 4em;
+        margin:0;
+    }
+}
+
+#footer {
+    @include panel;
+    width:100%;
+    position: absolute;
+    bottom: 0;
+    text-align:center;
+    padding:0.5em;
+}
+.nav {
+    visibility: hidden;
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid #93b5ed;
+    border-bottom: 2px solid #93b5ed;
+    li {
+        display: inline-block;
+    }
+}
+
+#desc {
+    @include panel;
+    padding: 2em;
+    position: relative;
+    width: 33%;
+    margin: {
+        left: 3em;
+        top: 3em;
+    };
+    
+}
+
+$fancy-lines: 1px solid white;
+.fancy {
+    line-height: 0.5;
+    text-align: center;
+    span {
+        display: inline-block;
+        position: relative;  
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            height: 5px;
+            border-bottom: $fancy-lines;
+            border-top: $fancy-lines;
+            top: 0;
+            width: 600px;
+        }
+        &:before {
+            right: 100%;
+            margin-right: 15px;
+        }
+        &:after {
+            left: 100%;
+            margin-left: 15px;
+        }
+    }
+}

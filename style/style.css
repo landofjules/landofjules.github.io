@@ -1,0 +1,73 @@
+@import "https://fonts.googleapis.com/css?family=Unica+One|Muli|Yatra+One|Quattrocento";
+/* colors */
+body {
+  font-family: 'Catamaran', sans-serif;
+  background-image: url("/img/BGgrime.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attach: fixed;
+  background-color: #014;
+  font-family: "Quattrocento", "Georgia", serif;
+  padding: 0;
+  margin: 0; }
+
+#topName {
+  background-color: rgba(0, 25, 40, 0.85);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 0.5em; }
+  #topName h1 {
+    font-family: 'Unica One', cursive;
+    font-size: 4em;
+    margin: 0; }
+
+#footer {
+  background-color: rgba(0, 25, 40, 0.85);
+  color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding: 0.5em; }
+
+.nav {
+  visibility: hidden;
+  width: 100%;
+  text-align: center;
+  border-top: 2px solid #93b5ed;
+  border-bottom: 2px solid #93b5ed; }
+  .nav li {
+    display: inline-block; }
+
+#desc {
+  background-color: rgba(0, 25, 40, 0.85);
+  color: white;
+  padding: 2em;
+  position: relative;
+  width: 33%;
+  margin-left: 3em;
+  margin-top: 3em; }
+
+.fancy {
+  line-height: 0.5;
+  text-align: center; }
+  .fancy span {
+    display: inline-block;
+    position: relative; }
+    .fancy span:before, .fancy span:after {
+      content: "";
+      position: absolute;
+      height: 5px;
+      border-bottom: 1px solid white;
+      border-top: 1px solid white;
+      top: 0;
+      width: 600px; }
+    .fancy span:before {
+      right: 100%;
+      margin-right: 15px; }
+    .fancy span:after {
+      left: 100%;
+      margin-left: 15px; }
+
+/*# sourceMappingURL=style.css.map */
