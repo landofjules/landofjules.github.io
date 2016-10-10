@@ -1,6 +1,6 @@
-@import 'https://fonts.googleapis.com/css?family=Unica+One|Muli|Yatra+One|Quattrocento';
+@import 'https://fonts.googleapis.com/css?family=Unica+One|Josefin+Sans|Quattrocento';
 /* colors */
-$opaque-panel: rgba(0,25,40,0.85);
+$opaque-panel: rgba(0,25,40,0.8);
 $serif-font: 'Quattrocento', 'Georgia', serif;
 
 @mixin panel {
@@ -9,7 +9,6 @@ $serif-font: 'Quattrocento', 'Georgia', serif;
 }
 
 body {
-    font-family: 'Catamaran', sans-serif;
     background: {
         image: url("/img/BGgrime.jpg");
         repeat: no-repeat;
@@ -22,34 +21,68 @@ body {
     margin: 0;
 }
 
+
 #topName {
+    
     @include panel;
-    width: 100%;
+    
     text-align: center;
-    padding: 0.5em;
+    padding: 0.5em 0.5em;
+    width:100%;
     h1 {
         font-family: 'Unica One', cursive;
         font-size: 4em;
         margin:0;
     }
 }
+#top .nav {
+    text-align:center;
+    .hold {
+        display:inline-block;
+        @include panel;
+        padding: 0.5em 0.5em 1em;
+        border-radius: 0 0 10px 10px;
+    }
+    ul {
+        padding:0;
+    }
+    li {
+        display:inline;
+        
+        a {
+            color: white;
+            text-decoration:none;
+            padding:0.5em 1em;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size:1.2em;
+            transition:0.2s;
+            cursor: pointer;
+            &:hover:not(.active) {
+                background-color: rgba(255,255,255,0.2);
+            }
+            &.active {
+                border-top: 1px solid rgba(255,255,255,0.7);
+                border-bottom: 1px solid rgba(255,255,255,0.7);
+                cursor:default;
+            }
+        }
+    }
+}
+
+
+
 
 #footer {
     @include panel;
     width:100%;
-    position: absolute;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    position: fixed;
     bottom: 0;
     text-align:center;
-    padding:0.5em;
-}
-.nav {
-    visibility: hidden;
-    width: 100%;
-    text-align: center;
-    border-top: 2px solid #93b5ed;
-    border-bottom: 2px solid #93b5ed;
-    li {
-        display: inline-block;
+    font-size: 1.1em;
+    a {
+        color:#91dcff;
     }
 }
 
@@ -90,5 +123,54 @@ $fancy-lines: 1px solid white;
             left: 100%;
             margin-left: 15px;
         }
+    }
+}
+
+#main {
+    margin: 2em;
+    position:relative;
+    .work {
+    
+        @include panel;
+        padding: 2em;
+        max-width: 1200px;
+        
+        h2 {
+            text-align: center;
+        }
+        .displayImg {
+            float: right;
+            position: relative;
+            overflow: hidden;
+            margin-left: 3em;
+            img {
+                postion: relative;
+            }
+        }
+    }
+}
+
+.btnRegion {
+    position: absolute;
+    bottom: 2em;
+    text-align: center;
+    left:200px;
+}
+a.panelBtn {
+    background-color: Transparent;
+    color:white;
+    background-repeat: no-repeat;
+    border: 2px solid white;
+    border-radius: 1em;
+    padding: 0.7em;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5em;
+    transition: 0.2s;
+    text-decoration: none;
+    &:hover {
+        background-color: rgba(255,255,255,0.2);
     }
 }

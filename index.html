@@ -12,14 +12,75 @@
                     <h1>Julian Kohann</h1>
                     <p class="fancy"><span>Web Development, Design, UX/UI</span></p>
                 </div>
+                <div class="nav">
+                    <ol>
+                        <div class="hold">
+                        <li><a data-target="#carousel-example-generic" data-slide-to="0" class="active">About Me</a></li>
+                        <li><a data-target="#carousel-example-generic" data-slide-to="1">ABET Assistant</a></li>
+                        <li><a data-target="#carousel-example-generic" data-slide-to="2">Game of Life</a></li>
+                        <li><a data-target="#carousel-example-generic" data-slide-to="3">Liliana Kohann</a></li>
+                        <li><a data-target="#carousel-example-generic" data-slide-to="4">Non-web Work</a></li>
+                        </div>
+                    </ol>
+                </div>
             </div>
-            
+            <div id="main">
+                
+                
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+                  <!--<ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  </ol>-->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                            <div class="work">
+                            <div class="displayImg">
+                            <img src="/img/gameCanv.jpg" alt="Game of life" /></div>
+                            <h2>The Game of Life</h2>
+                            <p>
+        The game of life is an experiment that has facinated millions. It is a keystone of complexity theory, demonstrating how a simple set of rules, can easily allow complex behavior. This system has been used to create text banners, reproducing organisms, a universal turing machene, and even the game of life itself. This simple simulation, while possesing an enourmous devoted community, did not have a place on the web that was pleasing to look at, and seamless to use, so I created gameoflife.xyz to give this community the web playground it deserves. It is intended for demonstrative and causal purposes, and has a number of features that assist with explenation, and experimentation. Check it out for yourself.
+                            </p>
+                            <div style="clear:both;"></div>
+                            <p class="btnRegion"><a class="panelBtn" href="https://gameoflife.xyz">Visit this site</a></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                      <div class="work">
+                            <div class="displayImg">
+                            <img src="/img/Abet.jpg" alt="Game of life" /></div>
+                            <h2>ABET Assistant</h2>
+                            <p>
+            ABET Assistant was the result of a four person senior design recruited to assist the department professor responsible for overseeing the collection of accreditation data across the Electircal Engineering and Computer Science department. I managed the team and was responsible for the design of the entire front end. The goal of this project was to simplify a tedious, and unorganized accreditation process each professor had to complete using excel files; our client had to manage all of it. The assignment was to use Django to create a tool for professors their data in a more managable way, so that our client could sort through this data using a relational database, which our client much preferred. The tool was produced much to the clients liking, and the project will be moving into production December 2016.
+                            </p>
+                            <div style="clear:both;"></div>
+                            <p class="btnRegion"><a class="panelBtn" href="https://abet.herokuapp.com">Visit this site</a></p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                
+                
+                
+            </div>
             <div id="footer">
-                <p>Contact: jkohann@gmail.com</p>
+                <div class="row">
+                    <div class="col-xs-4"><a href="https://github.com/landofjules">GitHub</a></div>
+                    <div class="col-xs-4">jkohann@gmail.com</div>
+                    <div class="col-xs-4"><a href="https://linkedin.com/in/juliankohann">linkedIn</a></div>
+                </div>
             </div>
         </div>
-        <script src="/js/bootstrap.js"></script>
         <script src="/js/jquery.js"></script>
-        <script scr="/js/main.js"></script>
+        <script src="/js/bootstrap.js"></script>
+        <script>
+            $(".nav li a").click(function() {
+                $(".nav li a").each(function() {
+                    $(this).removeClass("active");
+                })
+                $(this).addClass("active");
+            })
+        </script>
     </body>
 </html>
