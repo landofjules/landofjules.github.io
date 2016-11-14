@@ -1,2 +1,0 @@
-# landofjules.github.io
-website
