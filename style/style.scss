@@ -155,11 +155,16 @@ $fancy-lines: 1px solid white;
     }
 }
 
+
 #main {
     padding-left:15px;
     padding-right:15px;
 
     .item {
+    }
+    
+    .page p {
+        text-align:center;
     }
     
     .work {
@@ -168,6 +173,10 @@ $fancy-lines: 1px solid white;
         max-width: $main-width;
         margin: 2em auto 50px;
         position: relative;
+        
+        .clear {
+            clear:both;
+        }
         
         .descText {
             min-width:300px;
@@ -212,15 +221,18 @@ $fancy-lines: 1px solid white;
 }
 
 .gal-link {
-    img {
+        display:inline-block;
         border: 1px solid rgba(255,255,255,0.2);
-        transition:0.2s;
+        transition: 200ms;
         &:hover {
-            border: 1px solid rgba(255,255,255,0.7);
+            border: 1px solid rgba(188, 220, 255,0.9);
         }
-    }
+        margin-left: 0.5em;
+        margin-right: 0.5em;
     
 }
+
+
 
 
 .btnRegion {
