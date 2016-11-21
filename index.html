@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style/style.css">
         <link rel="stylesheet" type="text/css" href="style/ekko-lightbox.min.css">
-        
+        <meta name="viewport" content="width=device-width">
     </head>
     <body>
         <div id="container">
@@ -35,7 +35,7 @@
                             <h2 class="clear">Welcome to my Portfolio</h2>
                             <p>
                             <img class="selfImage-r" src="/img/SwanJulian.jpg" alt="Julian Kohann" />
-My name is Julian Kohann, and I just graduated with a BS in Computer Science from the University of Tennessee. I am looking to begin a career as a UX/UI designer. This is my portfolio, as of now, but I am looking foreward to growing it with your company.
+My name is Julian Kohann, and I just graduated with a BS in Computer Science from the University of Tennessee. I am looking to begin a career as a UX/UI designer.
 I am a long time painter, artist; I have a passion for making things look pretty, and I have been accepted to prestegious art programs and organizations in my state. I am looking to combine my love for coding with my passion for creativity, and fill the web with beautiful design. I have a great deal to learn, but I am quick to learn, and eagar to learn.
 You will find upon meetimg me, a passion that is hard to find in the world today. Moreover, I love people, and get really excited seeing and exploring the work of others, thus I excel working as part of a team. Let's make the web a nicer friendlier place, and let's make your client smile with the joy of discovery.
                             </p>
@@ -53,6 +53,7 @@ You will find upon meetimg me, a passion that is hard to find in the world today
                                 </div>
                                 <div class="col-sm-3">
                                    <ul>
+                                       <li>Wordpress</li>
                                        <li>AngularJS</li>
                                        <li>ReactJS</li>
                                        <li>SASS</li>
@@ -194,10 +195,22 @@ Liliana Kohann is a passionate, and increadible singer, songwriter, illustrator,
                 $(this).addClass("active");
             });
             
+            function hintNav() {
+                $(".nav li a").each(function() {
+                    var index = $(".nav li a").index($(this));
+                    setTimeout(function() {
+                        $(this).mouseover();
+                        setTimeout(function() {
+                            $(this).mouseout();
+                        },200);
+                    },200 * index);
+                });
+            }
             $(document).on('click', '[data-toggle="lightbox"]', function(event) {
                 event.preventDefault();
                 $(this).ekkoLightbox();
             });
+            
         </script>
     </body>
 </html>
