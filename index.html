@@ -33,8 +33,8 @@
                     <div class="item active">
                         <div class="work">
                             <h2 class="clear">Welcome to my Portfolio</h2>
-                            <p>
                             <img class="selfImage-r" src="/img/SwanJulian.jpg" alt="Julian Kohann" />
+                            <p>
 My name is Julian Kohann, and I just graduated with a BS in Computer Science from the University of Tennessee. I am looking to begin a career as a UX/UI designer.
 I am a long time painter, artist; I have a passion for making things look pretty, and I have been accepted to prestegious art programs and organizations in my state. I am looking to combine my love for coding with my passion for creativity, and fill the web with beautiful design. I have a great deal to learn, but I am quick to learn, and eagar to learn.
 You will find upon meetimg me, a passion that is hard to find in the world today. Moreover, I love people, and get really excited seeing and exploring the work of others, thus I excel working as part of a team. Let's make the web a nicer friendlier place, and let's make your client smile with the joy of discovery.
@@ -210,6 +210,22 @@ Liliana Kohann is a passionate, and increadible singer, songwriter, illustrator,
                 event.preventDefault();
                 $(this).ekkoLightbox();
             });
+            
+            $(window).resize(resp);
+                
+            function resp() {
+                $(".work").has(".displayImg").each(function() {
+                        
+                        
+                        if($(window).width() < 765) {
+                            $(this).find("h2").detach().insertBefore($(this).find(".displayImg"));
+                        } else {
+                            $(this).find("h2").detach().insertAfter($(this).find(".displayImg"));
+                        }
+                })
+            }
+            
+            resp();
             
         </script>
     </body>

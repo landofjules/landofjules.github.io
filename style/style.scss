@@ -12,7 +12,7 @@ $main-width: 1200px;
 body {
     background: {
         image: url("/img/BGgrime.jpg");
-        repeat: no-repeat;
+        repeat: repeat-y;
         position: top center;
         attachment: fixed;
         color:#014;
@@ -45,13 +45,21 @@ body {
         @include panel;
         padding: 0.5em 0.5em 1em;
         border-radius: 0 0 10px 10px;
+        margin-left:1em;
+        margin-right:1em;
+        @media screen and (max-width: 450px) {
+            border-top: 1px solid rgba(84, 96, 109,0.8);
+        }
     }
-    ul {
+    ol {
         padding:0;
     }
     li {
-        display:inline;
         
+        display:inline-block;
+        @media screen and (max-width: 750px) {
+            margin-top: 1em;
+        }
         a {
             color: white;
             text-decoration:none;
@@ -133,24 +141,26 @@ $fancy-lines: 1px solid white;
     text-align: center;
     span {
         display: inline-block;
-        position: relative;  
-        &:before,
-        &:after {
-            content: "";
-            position: absolute;
-            height: 5px;
-            border-bottom: $fancy-lines;
-            border-top: $fancy-lines;
-            top: 0;
-            width: 600px;
-        }
-        &:before {
-            right: 100%;
-            margin-right: 15px;
-        }
-        &:after {
-            left: 100%;
-            margin-left: 15px;
+        position: relative;
+        @media screen and (min-width: 650px) {
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                height: 5px;
+                border-bottom: $fancy-lines;
+                border-top: $fancy-lines;
+                top: 0;
+                width: 30vw;
+            }
+            &:before {
+                right: 100%;
+                margin-right: 15px;
+            }
+            &:after {
+                left: 100%;
+                margin-left: 15px;
+            }
         }
     }
 }
@@ -183,17 +193,47 @@ $fancy-lines: 1px solid white;
         }
         
         .skills {
-            margin-left:10%;
-            margin-right:10%;
+            
+            @media screen and (min-width:450px) {
+                margin-left:10%;
+                margin-right:10%;
+            }
+            ul {
+                @media screen and (max-width:767px) {
+                    padding-bottom: 8px;
+                    border-bottom: 1px solid rgba(84, 96, 109,0.8);
+                }
+            }
         }
         
         .selfImage-r {
-            float: right;
-            margin-left:2em;
+            @media screen and (min-width:600px) {
+                float: right;
+                margin-left:2em;
+            }
+            @media screen and (max-width:600px) {
+                text-align:center;
+            }
+            @media screen and (max-width:400px) {
+                width:100%;
+                height:auto;
+            }
+            margin-bottom:1em;
         }
         .selfImage-l {
-            float: left;
-            margin-right:2em;
+            @media screen and (min-width:600px) {
+                float: left;
+                margin-right:2em;
+            }
+            @media screen and (max-width:600px) {
+                text-align:center;
+            }
+            @media screen and (max-width:400px) {
+                width:100%;
+                height:auto;
+            }
+            margin-bottom:1em;
+            
         }
         
         h2 {
@@ -206,12 +246,25 @@ $fancy-lines: 1px solid white;
             text-align: center;
         }
         .displayImg {
-            float: right;
+            @media screen and (min-width:650px) {
+                float: right;
+                margin-left: 3em;
+            }
+            @media screen and (max-width:650px) {
+                margin-bottom:1em;
+                width:100%;
+            }
             position: relative;
             overflow: hidden;
-            margin-left: 3em;
+            @media screen and (max-width:1150px) and (min-width:650px) {
+                width:60%;
+            }
             img {
                 postion: relative;
+                @media screen and (max-width:1150px) {
+                    width:100%;
+                    height: auto;
+                }
             }
         }
         .desy {
