@@ -14,7 +14,6 @@ Run by Mom and Bryan
 **** STLYE ****
 Get bottom to change to icons when small
 Get other work to collapse nisely
-Make flashy menu hint thingy
 
 
  * * * <> * * *
@@ -22,3 +21,4 @@ Make flashy menu hint thingy
 Get menu to fold up nicely
 Get images to fit-page nicely.
 Get layout to change
+Make flashy menu hint thingy

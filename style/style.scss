@@ -71,6 +71,9 @@ body {
             &:hover:not(.active) {
                 background-color: rgba(255,255,255,0.2);
             }
+            &.hov {
+                background-color: rgba(255,255,255,0.2);
+            }
             &.active {
                 border-top: 1px solid rgba(255,255,255,0.7);
                 border-bottom: 1px solid rgba(255,255,255,0.7);
@@ -180,6 +183,9 @@ $fancy-lines: 1px solid white;
     .work {
         @include panel;
         padding: 2em 3em;
+        @media screen and (max-width:450px) {
+            padding: 2em 2em;
+        }
         max-width: $main-width;
         margin: 2em auto 50px;
         position: relative;
@@ -282,6 +288,7 @@ $fancy-lines: 1px solid white;
         }
         margin-left: 0.5em;
         margin-right: 0.5em;
+        margin-bottom: 0.5em;
     
 }
 
