@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Unica+One|Josefin+Sans|Quattrocento";
+@import "https://fonts.googleapis.com/css?family=Unica+One|Josefin+Sans|Lato|Quattrocento|Limelight";
 /* colors */
 body {
   background-image: url("/img/BGgrime.jpg");
@@ -127,7 +127,8 @@ body {
 
 #main {
   padding-left: 15px;
-  padding-right: 15px; }
+  padding-right: 15px;
+  font-size: 1.3em; }
   #main .page p {
     text-align: center; }
   #main .work {
@@ -144,10 +145,9 @@ body {
       clear: both; }
     #main .work .descText {
       min-width: 300px; }
-    @media screen and (min-width: 450px) {
-      #main .work .skills {
-        margin-left: 10%;
-        margin-right: 10%; } }
+    #main .work .warm {
+      border: 1px solid #ccabb9;
+      background-color: #423a3a; }
     @media screen and (max-width: 767px) {
       #main .work .skills ul {
         padding-bottom: 8px;
@@ -182,7 +182,8 @@ body {
       text-align: center;
       color: #bcdcff;
       border-bottom: 1px solid rgba(84, 96, 109, 0.3);
-      padding-bottom: 4px; }
+      padding-bottom: 4px;
+      font-family: "Quattrocento", "Georgia", serif, sans-serif; }
     #main .work h3 {
       text-align: center; }
     #main .work .displayImg {
@@ -223,21 +224,23 @@ body {
   text-align: center;
   left: 15%; }
 
-a.panelBtn {
+.panelBtn {
   background-color: Transparent;
+  display: inline-block;
   color: white;
   background-repeat: no-repeat;
   border: 2px solid white;
-  border-radius: 1em;
+  border-radius: 0.9em;
   padding: 0.7em;
   cursor: pointer;
   overflow: hidden;
   outline: none;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5em;
-  transition: 0.2s;
-  text-decoration: none; }
-  a.panelBtn:hover {
+  transition: 0.2s; }
+  .panelBtn a {
+    text-decoration: none; }
+  .panelBtn:hover {
     background-color: rgba(255, 255, 255, 0.2); }
 
 /*# sourceMappingURL=style.css.map */

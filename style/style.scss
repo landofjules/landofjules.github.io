@@ -1,7 +1,8 @@
-@import 'https://fonts.googleapis.com/css?family=Unica+One|Josefin+Sans|Quattrocento';
+@import 'https://fonts.googleapis.com/css?family=Unica+One|Josefin+Sans|Lato|Quattrocento|Limelight';
 /* colors */
 $opaque-panel: rgba(0,25,40,0.85);
 $serif-font: 'Quattrocento', 'Georgia', serif;
+$h2-font: 'Quattrocento', 'Georgia', serif;
 $main-width: 1200px;
 
 @mixin panel {
@@ -173,6 +174,7 @@ $fancy-lines: 1px solid white;
     padding-left:15px;
     padding-right:15px;
 
+    font-size: 1.3em;
     .item {
     }
     
@@ -198,12 +200,13 @@ $fancy-lines: 1px solid white;
             min-width:300px;
         }
         
+        .warm {
+            border: 1px solid #ccabb9;
+            background-color:#423a3a;
+        }
+        
         .skills {
             
-            @media screen and (min-width:450px) {
-                margin-left:10%;
-                margin-right:10%;
-            }
             ul {
                 @media screen and (max-width:767px) {
                     padding-bottom: 8px;
@@ -247,6 +250,7 @@ $fancy-lines: 1px solid white;
             color:#bcdcff;
             border-bottom:1px solid rgba(84, 96, 109,0.3);
             padding-bottom:4px;
+            font-family: $h2-font, sans-serif;
         }
         h3 {
             text-align: center;
@@ -301,12 +305,13 @@ $fancy-lines: 1px solid white;
     text-align: center;
     left:15%;
 }
-a.panelBtn {
+.panelBtn {
     background-color: Transparent;
+    display: inline-block;
     color:white;
     background-repeat: no-repeat;
     border: 2px solid white;
-    border-radius: 1em;
+    border-radius: 0.9em;
     padding: 0.7em;
     cursor: pointer;
     overflow: hidden;
@@ -314,8 +319,14 @@ a.panelBtn {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.5em;
     transition: 0.2s;
-    text-decoration: none;
+    a {
+        text-decoration: none;
+    }
     &:hover {
         background-color: rgba(255,255,255,0.2);
     }
+    //i.fa {
+    //    color: rgba(255,255,255,0.8);
+    //}
 }
+
