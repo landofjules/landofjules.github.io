@@ -66,7 +66,7 @@ body {
             text-decoration:none;
             padding:0.5em 1em;
             font-family: 'Josefin Sans', sans-serif;
-            font-size:1.2em;
+            font-size:1.4em;
             transition:0.2s;
             cursor: pointer;
             &:hover:not(.active) {
@@ -180,6 +180,9 @@ $fancy-lines: 1px solid white;
     
     .page p {
         text-align:center;
+    }
+    .main p {
+        margin-left: 1em;
     }
     
     .work {
@@ -300,15 +303,19 @@ $fancy-lines: 1px solid white;
 
 
 .btnRegion {
-    margin-top: 3.5em;
     
     text-align: center;
+}
+
+.visit {
+    margin-top: 3.5em;
     left:15%;
 }
-.panelBtn {
+
+a.panelBtn {
+    margin-bottom: 0.5em;
     background-color: Transparent;
     display: inline-block;
-    color:white;
     background-repeat: no-repeat;
     border: 2px solid white;
     border-radius: 0.9em;
@@ -319,11 +326,12 @@ $fancy-lines: 1px solid white;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.5em;
     transition: 0.2s;
-    a {
-        text-decoration: none;
-    }
+    text-decoration: none;
+    color: white;
     &:hover {
         background-color: rgba(255,255,255,0.2);
+        color: white;
+        text-decoration: none;
     }
     //i.fa {
     //    color: rgba(255,255,255,0.8);

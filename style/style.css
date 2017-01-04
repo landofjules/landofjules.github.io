@@ -48,7 +48,7 @@ body {
       text-decoration: none;
       padding: 0.5em 1em;
       font-family: 'Josefin Sans', sans-serif;
-      font-size: 1.2em;
+      font-size: 1.4em;
       transition: 0.2s;
       cursor: pointer; }
       #top .nav li a:hover:not(.active) {
@@ -131,6 +131,8 @@ body {
   font-size: 1.3em; }
   #main .page p {
     text-align: center; }
+  #main .main p {
+    margin-left: 1em; }
   #main .work {
     background-color: rgba(0, 25, 40, 0.85);
     color: white;
@@ -220,14 +222,16 @@ body {
     border: 1px solid rgba(188, 220, 255, 0.9); }
 
 .btnRegion {
+  text-align: center; }
+
+.visit {
   margin-top: 3.5em;
-  text-align: center;
   left: 15%; }
 
-.panelBtn {
+a.panelBtn {
+  margin-bottom: 0.5em;
   background-color: Transparent;
   display: inline-block;
-  color: white;
   background-repeat: no-repeat;
   border: 2px solid white;
   border-radius: 0.9em;
@@ -237,10 +241,12 @@ body {
   outline: none;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5em;
-  transition: 0.2s; }
-  .panelBtn a {
+  transition: 0.2s;
+  text-decoration: none;
+  color: white; }
+  a.panelBtn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
     text-decoration: none; }
-  .panelBtn:hover {
-    background-color: rgba(255, 255, 255, 0.2); }
 
 /*# sourceMappingURL=style.css.map */

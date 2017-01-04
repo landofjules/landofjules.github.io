@@ -18,7 +18,7 @@
                 <div class="nav">
                     <ol>
                         <div class="hold">
-                        <li><a data-target="#carousel-example-generic" data-slide-to="0" class="active">Welcome</a></li>
+                        <li><a data-target="#carousel-example-generic" data-slide-to="0" class="active">About Me</a></li>
                         <li><a data-target="#carousel-example-generic" data-slide-to="1" id="firstport">ABET Assistant</a></li>
                         <li><a data-target="#carousel-example-generic" data-slide-to="2">Game of Life</a></li>
                         <li><a data-target="#carousel-example-generic" data-slide-to="3">Non-web Work</a></li>
@@ -36,11 +36,18 @@
                             <div id='content' class='row'>
                                 <h2 class="clear">Welcome to my Portfolio</h2>
                                 
-                                <div class="col-sm-9 main">
-                                        <p>My name is Julian Kohann, and I recently graduated with a Bachelor of Science degree in Computer Science from the University of Tennessee. I am seeking a career as a UX/UI designer, and plan to eventually employ my skills in management.</p>
-                                        <p>While I don't yet have a lot of professional projects under my belt, I have an rich creative background, having studied art for many years, and worked extensively with professional creative software to implement real world projects for my high school, university, and various clients.</p>
-                                        <p>Let's create together, and fill the web with attractive and intuitive design.</p>
+                                <div class="col-sm-3 sidebar">
+                                    <img src="/img/GdanskJulian.jpg" alt="Julian Kohann" />
+                                    <p class="btnRegion"><a class="panelBtn" target="_blank" style="margin-top:1em;" id="beginBtn"><i class="fa fa-play" aria-hidden="true"></i>&nbsp;&nbsp;Begin</a></p>
+                                    <h2>Recources</h2>
+                                    <p class="btnRegion"><a class="panelBtn" target="_blank"><i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;&nbsp;Resume</a><br/>
+                                    <a class="panelBtn" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;&nbsp;Letter of<br/>Reccomendation</a></p>
+                                </div>
                                     
+                                <div class="col-sm-9 main">
+                                   <p>My name is Julian Kohann, and I recently graduated with a Bachelor of Science degree in Computer Science from the University of Tennessee. I am seeking a career as a UX/UI designer, and plan to eventually employ my skills in project/team management. </p> 
+                                   <p>I have worked extensively developing applications, and utilizing professional creative software for graphic and interactive design, to implement real-world projects for my high school, university, and various business clients. I also have a rich creative background, having studied art for many years.</p>
+                                   <p>Together, let’s create something special, and fill the web with attractive and intuitive design.</p>
                                     <h2 class="clear">Skills</h2>
                                     <div class="row skills">
                                         <div class="col-sm-3">
@@ -58,8 +65,8 @@
                                            <ul>
                                                <li>jQuery</li>
                                                <li>SASS</li>
-                                               <li>Twitter Bootstrap</li>
-                                               <li>Django Web&nbsp;Framework</li>
+                                               <li>Bootstrap</li>
+                                               <li>Django</li>
                                                <li>Wordpress</li>
                                                <li>AngularJS</li>
                                                <li>ReactJS</li>
@@ -88,18 +95,10 @@
                                            </ul> 
                                         </div>
                                     </div>
+                                    <p class="text-center"><i>"Talent is hitting a target no one else can hit. Genius is hitting a target no one else can see."</i> -Arthur Schopenhauer</p>
                                 </div>
-                                <div class="col-sm-3 sidebar">
-                                    <img src="/img/GdanskJulian.jpg" alt="Julian Kohann" />
-                                    <p class="btnRegion"><a class="panelBtn" target="_blank" id="beginBtn"><i class="fa fa-play" aria-hidden="true"></i>&nbsp;&nbsp;Begin</a></p>
-                                    <h2>Recources</h2>
-                                    <p class="btnRegion"><div class="panelBtn"><a target="_blank"><i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;&nbsp;Resume</a></div><br/>
-                                    <div class="panelBtn"><a class="panelBtn" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;&nbsp;Letter of<br/>Reccomendation</a></div></p>
-                                </div>
-                                    
                             </div>
                             
-                            <p class="text-center"><i>"Talent is hitting a target no one else can hit. Genius is hitting a target no one else can see."</i> -Arthur Schopenhauer</p>
 
                         </div>
                     </div>
@@ -107,11 +106,11 @@
                       <div class="work">
                             <div class="displayImg">
                             <img src="/img/Abet.jpg" alt="Game of life" /></div>
-                            <h2>ABET Assistant</h2>
+                            <h2>Team Leader / UI Developer</h2>
                             <p><span class="desy">
-ABET Assistant was the result of a four person senior design team recruited to assist the department professor responsible for overseeing the collection of accreditation data across the EECS department. I was chosen as the leader of the team and was responsible for the design of the entire front end. The goal of this project was to simplify a tedious, and unorganized accreditation process each professor had to complete using excel files, which had to be managed by our client.  We created an interface for professors to enter their data in a manageable way, so that our client could sort through this data using a relational database, which he much preferred. The front end was made with Bootstrap and jQuery, and the backend was built using the Django web framework. The tool was completed much to the clients liking, and moved into production December 2016.
+                                <p>During my final year at university, I was selected to lead a four-person senior design team to create the ABET Assistant, a user interface designed to assist the professor responsible for overseeing the collection of accreditation data across the Electrical Engineering and Computer Science department. I was also responsible for the design of the entire front end. The goal of this project was to simplify a tedious and unorganized accreditation process each professor had to complete using excel files, which had to be managed by our client.  We created an interface for professors to enter their data in a manageable way, so that our client could sort through this data using a relational database, which he much preferred. The front end was made with Bootstrap and jQuery, and the backend was built using the Django web framework. The tool was considered a great success and was moved into production in December 2016.</p>
                             </span></p>
-                            <p class="btnRegion"><a class="panelBtn" target="_blank" href="https://abet.herokuapp.com">Visit this site</a></p>
+                            <p class="btnRegion visit"><a class="panelBtn" target="_blank" href="https://abet.herokuapp.com">View Demo</a></p>
                             <div style="clear:both;"></div>
                         </div>
                     </div>
@@ -121,20 +120,16 @@ ABET Assistant was the result of a four person senior design team recruited to a
                             <img src="/img/gameCanv.jpg" alt="Game of life" /></div>
                             <h2>The Game of Life</h2>
                             <p>
-John Conway’s Game of Life is a simple computational experiment with fascinating results, and a devoted community. However, the leading web-playgrounds available are unpleasant to look at and difficult to use. I built gameoflife.xyz using HTML5 Canvas to provide a better place to experiment with this complex system, and understand the set of rules that can be used to create a universal turing machine. It is intended for demonstrative and causal purposes, and has a number of features that assist with explanation, and experimentation.
+                                John Conway’s <i>Game of Life</i> is a simple computational experiment with fascinating results, and a devoted community. However, the leading web-playgrounds available are unpleasant to look at and difficult to use. I built gameoflife.xyz using HTML5 Canvas to provide a better place to experiment with this complex system, and to understand the set of rules that can be used to create a universal Turing machine. It is intended for demonstrative and causal purposes, and has a number of features that assist with explanation and experimentation.
                             </p>
-                            <p class="btnRegion"><a class="panelBtn" target="_blank" href="https://gameoflife.xyz">Visit this site</a></p>
+                            <p class="btnRegion visit"><a class="panelBtn" target="_blank" href="https://gameoflife.xyz">Visit this site</a></p>
                             <div style="clear:both;"></div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="work page">
                             <h2>Newgy Robo Pong</h2>
-                            <p>In 2014 I was recruited as part of a small team to make a couple commercials for
-                            Newgy, a Nashville based company that manufatures Table Tennis Robots. Below are the 
-                            finished products.
-                            I worked as the director of photography, designed the special effects, 
-                            and designed/animated the logo animations at the end of each commercial.
+                            <p>In 2014 I was recruited as part of a small team to make commercials for Newgy, a Nashville-based company that manufactures Table Tennis Robots. Below are the finished products. I worked as the director of photography, designed the special effects, and designed/animated the logos at the end of each commercial.
                             </p>
                             <p>
                                 <a class="gal-link" href="https://www.youtube.com/watch?v=EZXxBovrwUo" data-toggle="lightbox">
@@ -145,7 +140,7 @@ John Conway’s Game of Life is a simple computational experiment with fascinati
                                     <img src="/img/thumb/ILove2.jpg" class="img-fluid"></a>
                             </p>
                             <h2>Rethink Private Healthcare</h2>
-                            <p>In my final semester of college, I worked with the Bernie Sanders campaign, and my hometown community theater to produce this PSA. The goal was to give people a broader scope of concern on healthcare in america, from a fundamental standpoint. I wrote, produced, and directed the PSA, and with the help of my brother, Adrian Kohann, we turned this into a reality.</p>
+                            <p>In my final semester of college, I worked with the Bernie Sanders Campaign, and my hometown community theater to produce this PSA. The goal was to encourage people to consider healthcare in America from a different perspective. I wrote, produced, and directed the PSA, and with the help of my brother, Adrian Kohann, turned this into a reality.</p>
                                 <p><a class="gal-link" href="https://www.youtube.com/watch?v=BNKF4G0gC48" data-toggle="lightbox">
                                     <img src="/img/thumb/healthcare.jpg" class="img-fluid"></a></p>
                             <h2>Drawings and Paintings</h2>
