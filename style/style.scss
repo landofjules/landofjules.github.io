@@ -25,11 +25,18 @@ body {
     box-sizing: border-box;
 }
 
+a.contact {
+    color:#bcdcff;
+}
+
+.julian {
+    margin-bottom:1em;
+}
 
 #topName {
-    
+
     @include panel;
-    
+
     text-align: center;
     padding: 0.5em 0.5em;
     width:100%;
@@ -56,7 +63,7 @@ body {
         padding:0;
     }
     li {
-        
+
         display:inline-block;
         @media screen and (max-width: 750px) {
             margin-top: 1em;
@@ -108,11 +115,11 @@ body {
         padding-top: 0.5em;
         padding-bottom: 0.5em;
         border-top: 1px solid #4d5f80;
-        
+
     }
     a {
         color:#91dcff;
-        
+
         transition: 0.2s;
         text-decoration:none;
         border-bottom: 1px solid rgba(255, 255, 255, 0);
@@ -120,7 +127,7 @@ body {
         -moz-transition: border 200ms ease;
         -ms-transition: border 200ms ease;
         -o-transition: border 200ms ease;
-        transition: border 200ms ease; 
+        transition: border 200ms ease;
         &:hover {
           border-bottom: 1px solid rgba(255, 255, 255, 1);
         }
@@ -136,7 +143,7 @@ body {
         left: 3em;
         top: 3em;
     };
-    
+
 }
 
 $fancy-lines: 1px solid white;
@@ -177,14 +184,14 @@ $fancy-lines: 1px solid white;
     font-size: 1.3em;
     .item {
     }
-    
+
     .page p {
         text-align:center;
     }
     .main p {
         margin-left: 1em;
     }
-    
+
     .work {
         @include panel;
         padding: 2em 3em;
@@ -194,22 +201,22 @@ $fancy-lines: 1px solid white;
         max-width: $main-width;
         margin: 2em auto 50px;
         position: relative;
-        
+
         .clear {
             clear:both;
         }
-        
+
         .descText {
             min-width:300px;
         }
-        
+
         .warm {
             border: 1px solid #ccabb9;
             background-color:#423a3a;
         }
-        
+
         .skills {
-            
+
             ul {
                 @media screen and (max-width:767px) {
                     padding-bottom: 8px;
@@ -217,7 +224,7 @@ $fancy-lines: 1px solid white;
                 }
             }
         }
-        
+
         .selfImage-r {
             @media screen and (min-width:600px) {
                 float: right;
@@ -245,9 +252,9 @@ $fancy-lines: 1px solid white;
                 height:auto;
             }
             margin-bottom:1em;
-            
+
         }
-        
+
         h2 {
             text-align: center;
             color:#bcdcff;
@@ -296,14 +303,14 @@ $fancy-lines: 1px solid white;
         margin-left: 0.5em;
         margin-right: 0.5em;
         margin-bottom: 0.5em;
-    
+
 }
 
 
 
 
 .btnRegion {
-    
+
     text-align: center;
 }
 

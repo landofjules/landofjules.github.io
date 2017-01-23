@@ -12,6 +12,12 @@ body {
   height: 100%;
   box-sizing: border-box; }
 
+a.contact {
+  color: #bcdcff; }
+
+.julian {
+  margin-bottom: 1em; }
+
 #topName {
   background-color: rgba(0, 25, 40, 0.85);
   color: white;
