@@ -1,6 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Unica+One|Josefin+Sans|Lato|Quattrocento|Limelight';
 /* colors */
-$opaque-panel: rgba(0,25,40,0.85);
+$opaque-panel: rgba(0,15,40,0.85);
 $serif-font: 'Quattrocento', 'Georgia', serif;
 $h2-font: 'Quattrocento', 'Georgia', serif;
 $main-width: 1200px;
@@ -18,6 +18,11 @@ body {
         attachment: fixed;
         color:#014;
     }
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
     font-family:$serif-font;
     padding: 0;
     margin: 0;
@@ -30,7 +35,25 @@ a.contact {
 }
 
 .julian {
-    margin-bottom:1em;
+    margin:1em auto;
+}
+
+.sidebar {
+    text-align:center;
+    .imgwrapper {
+        margin-bottom: 1.7em;
+    }
+}
+
+.resources-up {
+    @media screen and (max-width: 990px) {
+        display:none;
+    }
+}
+.resources-down {
+    @media screen and (min-width: 990px) {
+        display:none;
+    }
 }
 
 #topName {
@@ -261,22 +284,37 @@ $fancy-lines: 1px solid white;
             border-bottom:1px solid rgba(84, 96, 109,0.3);
             padding-bottom:4px;
             font-family: $h2-font, sans-serif;
+            &.up {
+                @media screen and (min-width:1050px) {
+                    display: none;
+                }
+            }
+            &.down {
+                @media screen and (max-width:1050px) {
+                    display: none;
+                }
+            }
         }
         h3 {
             text-align: center;
         }
         .displayImg {
-            @media screen and (min-width:650px) {
+            @media screen and (min-width:870px) {
                 float: right;
                 margin-left: 3em;
             }
-            @media screen and (max-width:650px) {
-                margin-bottom:1em;
+            @media screen and (max-width:870px) {
+                margin:inherit auto 1em;
                 width:100%;
+                img {
+                    display:block;
+                    margin-top:0.5em;
+                    margin-bottom:1em;
+                }
             }
             position: relative;
             overflow: hidden;
-            @media screen and (max-width:1150px) and (min-width:650px) {
+            @media screen and (max-width:1150px) and (min-width:700px) {
                 width:60%;
             }
             img {

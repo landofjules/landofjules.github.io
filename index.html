@@ -39,16 +39,16 @@
                                 <div class="col-lg-3 col-md-4 col-sm-5 sidebar">
                                     <div class="row">
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 imgwrapper">
-                                            <img class="julian img-responsive" src="/img/GdanskJulian.jpg" alt="Julian Kohann" />
+                                            <p><img class="julian img-responsive" src="/img/GdanskJulian.jpg" alt="Julian Kohann" /></p>
                                             <p>
-                                                <a class="contact" href="https://linkedin.com/in/juliankohann"><i class="fa fa-linkedin-square" aria-hidden="true"></i>&nbsp;LinkedIn</a></p>
                                                 <a class="contact" href="mailto:jkohann@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;jkohann@gmail.com</a></p>
+                                                <a class="contact" href="https://linkedin.com/in/juliankohann"><i class="fa fa-linkedin-square" aria-hidden="true"></i>&nbsp;LinkedIn</a></p>
                                         </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="resources-up"><div class="col-lg-12 col-md-12 col-sm-12">
                                             <h2>Recources</h2>
                                             <p class="btnRegion"><a href="resume.pdf" class="panelBtn" target="_blank"><i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;&nbsp;Resume</a><br/>
                                             <a href="recommendationLetter.pdf" class="panelBtn" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;&nbsp;Letter of<br/>Reccomendation</a></p>
-                                        </div>
+                                        </div></div>
                                     </div>
                                 </div>
 
@@ -106,6 +106,13 @@
                                            </ul>
                                         </div>
                                     </div>
+                                    <div class="resources-down">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 hidden-sm-up">
+                                            <h2>Recources</h2>
+                                            <p class="btnRegion"><a href="resume.pdf" class="panelBtn" target="_blank"><i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;&nbsp;Resume</a><br/>
+                                            <a href="recommendationLetter.pdf" class="panelBtn" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;&nbsp;Letter of<br/>Reccomendation</a></p>
+                                        </div>
+                                    </div>
                                     <p class="text-center"><i>"Talent is hitting a target no one else can hit. Genius is hitting a target no one else can see."</i> -Arthur Schopenhauer</p>
                                 </div>
                             </div>
@@ -115,9 +122,10 @@
                     </div>
                     <div class="item">
                       <div class="work">
-                            <div class="displayImg">
-                            <img src="/img/Abet.jpg" alt="Game of life" /></div>
-                            <h2>Team Leader / UI Developer</h2>
+                            <h2 class="up">Team Leader / UI Developer</h2>
+                            <div class="displayImg img-responsive center-block">
+                            <img src="/img/Abet.jpg" alt="ABET Assistant" /></div>
+                            <h2 class="down">Team Leader / UI Developer</h2>
                             <p><span class="desy">
                                 <p>During my final year at university, I was selected to lead a four-person senior design team to create the ABET Assistant, a user interface designed to assist the professor responsible for overseeing the collection of accreditation data across the Electrical Engineering and Computer Science department. I was also responsible for the design of the entire front end. The goal of this project was to simplify a tedious and unorganized accreditation process each professor had to complete using excel files, which had to be managed by our client.  We created an interface for professors to enter their data in a manageable way, so that our client could sort through this data using a relational database, which he much preferred. The front end was made with Bootstrap and jQuery, and the backend was built using the Django web framework. The tool was considered a great success and was moved into production in December 2016.</p>
                             </span></p>
@@ -127,9 +135,10 @@
                     </div>
                     <div class="item">
                         <div class="work">
-                            <div class="displayImg">
+                            <h2 class="up">The Game of Life</h2>
+                            <div class="displayImg img-responsive center-block">
                             <img src="/img/gameCanv.jpg" alt="Game of life" /></div>
-                            <h2>The Game of Life</h2>
+                            <h2 class="down">The Game of Life</h2>
                             <p>
                                 John Conway’s <i>Game of Life</i> is a simple computational experiment with fascinating results, and a devoted community. However, the leading web-playgrounds available are unpleasant to look at and difficult to use. I built gameoflife.xyz using HTML5 Canvas to provide a better place to experiment with this complex system, and to understand the set of rules that can be used to create a universal Turing machine. It is intended for demonstrative and causal purposes, and has a number of features that assist with explanation and experimentation.
                             </p>
@@ -229,14 +238,14 @@
             $("#beginBtn").mouseleave(function(){
                 $("#firstport").removeClass("hov");
             });
-
+/*
             $(window).resize(resp);
 
             function resp() {
                 $(".work").has(".displayImg").each(function() {
 
 
-                        if($(window).width() < 765) {
+                        if($(window).width() < 870) {
                             $(this).find("h2").detach().insertBefore($(this).find(".displayImg"));
                         } else {
                             $(this).find("h2").detach().insertAfter($(this).find(".displayImg"));
@@ -246,7 +255,7 @@
 
 
             resp();
-
+*/
         </script>
     </body>
 </html>

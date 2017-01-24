@@ -6,6 +6,10 @@ body {
   background-position: top center;
   background-attachment: fixed;
   background-color: #014;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   font-family: "Quattrocento", "Georgia", serif;
   padding: 0;
   margin: 0;
@@ -16,10 +20,23 @@ a.contact {
   color: #bcdcff; }
 
 .julian {
-  margin-bottom: 1em; }
+  margin: 1em auto; }
+
+.sidebar {
+  text-align: center; }
+  .sidebar .imgwrapper {
+    margin-bottom: 1.7em; }
+
+@media screen and (max-width: 990px) {
+  .resources-up {
+    display: none; } }
+
+@media screen and (min-width: 990px) {
+  .resources-down {
+    display: none; } }
 
 #topName {
-  background-color: rgba(0, 25, 40, 0.85);
+  background-color: rgba(0, 15, 40, 0.85);
   color: white;
   text-align: center;
   padding: 0.5em 0.5em;
@@ -33,7 +50,7 @@ a.contact {
   text-align: center; }
   #top .nav .hold {
     display: inline-block;
-    background-color: rgba(0, 25, 40, 0.85);
+    background-color: rgba(0, 15, 40, 0.85);
     color: white;
     padding: 0.5em 0.5em 1em;
     border-radius: 0 0 10px 10px;
@@ -82,7 +99,7 @@ a.contact {
   background-color: #014; }
   #footer .row {
     font-size: 1.1em;
-    background-color: rgba(0, 25, 40, 0.85);
+    background-color: rgba(0, 15, 40, 0.85);
     color: white;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -101,7 +118,7 @@ a.contact {
       border-bottom: 1px solid white; }
 
 #desc {
-  background-color: rgba(0, 25, 40, 0.85);
+  background-color: rgba(0, 15, 40, 0.85);
   color: white;
   padding: 2em;
   position: relative;
@@ -140,7 +157,7 @@ a.contact {
   #main .main p {
     margin-left: 1em; }
   #main .work {
-    background-color: rgba(0, 25, 40, 0.85);
+    background-color: rgba(0, 15, 40, 0.85);
     color: white;
     padding: 2em 3em;
     max-width: 1200px;
@@ -192,20 +209,30 @@ a.contact {
       border-bottom: 1px solid rgba(84, 96, 109, 0.3);
       padding-bottom: 4px;
       font-family: "Quattrocento", "Georgia", serif, sans-serif; }
+      @media screen and (min-width: 1050px) {
+        #main .work h2.up {
+          display: none; } }
+      @media screen and (max-width: 1050px) {
+        #main .work h2.down {
+          display: none; } }
     #main .work h3 {
       text-align: center; }
     #main .work .displayImg {
       position: relative;
       overflow: hidden; }
-      @media screen and (min-width: 650px) {
+      @media screen and (min-width: 870px) {
         #main .work .displayImg {
           float: right;
           margin-left: 3em; } }
-      @media screen and (max-width: 650px) {
+      @media screen and (max-width: 870px) {
         #main .work .displayImg {
-          margin-bottom: 1em;
-          width: 100%; } }
-      @media screen and (max-width: 1150px) and (min-width: 650px) {
+          margin: inherit auto 1em;
+          width: 100%; }
+          #main .work .displayImg img {
+            display: block;
+            margin-top: 0.5em;
+            margin-bottom: 1em; } }
+      @media screen and (max-width: 1150px) and (min-width: 700px) {
         #main .work .displayImg {
           width: 60%; } }
       #main .work .displayImg img {
