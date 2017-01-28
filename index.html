@@ -7,6 +7,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="img/jpg" href="/img/favicon.jpg" />
         <script src="https://use.fontawesome.com/df02d78861.js"></script>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-animate.js"></script>
+        <script type="text/javascript" src="js/bower/ng-image-gallery/dist/ng-image-gallery.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="js/bower/ng-image-gallery/dist/ng-image-gallery.min.css">
+
+        <script type="text/javascript" src="/js/app/app.module.js"></script>
+        <script type="text/javascript" src="/js/app/app.config.js"></script>
+        <script type="text/javascript" src="/js/app/app.controller.js"></script>
     </head>
     <body>
         <div id="container">
@@ -19,7 +27,7 @@
                     <ol>
                         <div class="hold">
                         <li><a data-target="#carousel-example-generic" data-slide-to="0" class="active">About Me</a></li>
-                        <li><a data-target="#carousel-example-generic" data-slide-to="1" id="firstport">ABET Assistant</a></li>
+                        <li><a data-target="#carousel-example-generic" data-slide-to="1" id="firstport">Team Leader</a></li>
                         <li><a data-target="#carousel-example-generic" data-slide-to="2">Game of Life</a></li>
                         <li><a data-target="#carousel-example-generic" data-slide-to="3">Non-web Work</a></li>
                         </div>
@@ -34,8 +42,6 @@
                     <div class="item active">
                         <div class="work">
                             <div id='content' class='row'>
-                                <h2 class="clear">Welcome to my Portfolio</h2>
-
                                 <div class="col-lg-3 col-md-4 col-sm-5 sidebar">
                                     <div class="row">
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 imgwrapper">
@@ -45,24 +51,23 @@
                                                 <a class="contact" href="https://linkedin.com/in/juliankohann"><i class="fa fa-linkedin-square" aria-hidden="true"></i>&nbsp;LinkedIn</a></p>
                                         </div>
                                         <div class="resources-up"><div class="col-lg-12 col-md-12 col-sm-12">
-                                            <h2>Recources</h2>
                                             <p class="btnRegion"><a href="resume.pdf" class="panelBtn" target="_blank"><i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;&nbsp;Resume</a><br/>
-                                            <a href="recommendationLetter.pdf" class="panelBtn" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;&nbsp;Letter of<br/>Reccomendation</a></p>
+                                            <a href="recommendationLetter.pdf" class="panelBtn" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;&nbsp;Letter of<br/>Recommendation</a></p>
                                         </div></div>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-9 col-md-8 col-sm-7 main">
-                                   <p>My name is Julian Kohann, and I recently graduated with a Bachelor of Science degree in Computer Science from the University of Tennessee. I am seeking a career as a UX/UI designer, and plan to eventually employ my skills in project/team management. </p>
-                                   <p>I have worked extensively developing applications, and utilizing professional creative software for graphic and interactive design, to implement real-world projects for my high school, university, and various business clients. I also have a rich creative background, having studied art for many years.</p>
-                                   <p>Together, let’s create something special, and fill the web with attractive and intuitive design.</p>
+                                   <p><span class="titlem">My</span> name is Julian Kohann, and I recently graduated with a Bachelor of Science degree in Computer Science from the University of Tennessee. I am seeking a career as a UX/UI designer, and plan to eventually employ my skills in project/team management.</p>
+                                   <p>I have worked extensively developing applications and utilizing professional creative software to implement real-world projects for my high school, university, and various business clients. I also have a rich creative background, having studied art for many years.</p>
+                                   <p>Together, let's create something special, and fill the web with attractive and intuitive design.</p>
                                 </div>
                                 <div class="col-lg-9 col-md-8 col-sm-12 main">
                                     <h2 class="clear">Skills</h2>
                                     <div class="row skills">
                                         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                                            <ul>
-                                               <li>JavaSrcript</li>
+                                               <li>JavaScript</li>
                                                <li>Python</li>
                                                <li>C++</li>
                                                <li>Java</li>
@@ -108,9 +113,9 @@
                                     </div>
                                     <div class="resources-down">
                                         <div class="col-lg-12 col-md-12 col-sm-12 hidden-sm-up">
-                                            <h2>Recources</h2>
+
                                             <p class="btnRegion"><a href="resume.pdf" class="panelBtn" target="_blank"><i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;&nbsp;Resume</a><br/>
-                                            <a href="recommendationLetter.pdf" class="panelBtn" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;&nbsp;Letter of<br/>Reccomendation</a></p>
+                                            <a href="recommendationLetter.pdf" class="panelBtn" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;&nbsp;Letter of<br/>Recommendation</a></p>
                                         </div>
                                     </div>
                                     <p class="text-center"><i>"Talent is hitting a target no one else can hit. Genius is hitting a target no one else can see."</i> -Arthur Schopenhauer</p>
@@ -140,7 +145,7 @@
                             <img src="/img/gameCanv.jpg" alt="Game of life" /></div>
                             <h2 class="down">The Game of Life</h2>
                             <p>
-                                John Conway’s <i>Game of Life</i> is a simple computational experiment with fascinating results, and a devoted community. However, the leading web-playgrounds available are unpleasant to look at and difficult to use. I built gameoflife.xyz using HTML5 Canvas to provide a better place to experiment with this complex system, and to understand the set of rules that can be used to create a universal Turing machine. It is intended for demonstrative and causal purposes, and has a number of features that assist with explanation and experimentation.
+                                John Conway's <i>Game of Life</i> is a simple computational experiment with fascinating results, and a devoted community. However, the leading web-playgrounds available are unpleasant to look at and difficult to use. I built gameoflife.xyz using HTML5 Canvas to provide a better place to experiment with this complex system, and to understand the set of rules that can be used to create a universal Turing machine. It is intended for demonstrative and causal purposes, and has a number of features that assist with explanation and experimentation.
                             </p>
                             <p class="btnRegion visit"><a class="panelBtn" target="_blank" href="https://gameoflife.xyz">Visit this site</a></p>
                             <div style="clear:both;"></div>
@@ -163,9 +168,19 @@
                             <p>In my final semester of college, I worked with the Bernie Sanders Campaign, and my hometown community theater to produce this PSA. The goal was to encourage people to consider healthcare in America from a different perspective. I wrote, produced, and directed the PSA, and with the help of my brother, Adrian Kohann, turned this into a reality.</p>
                                 <p class="imgwrapper"><a class="gal-link" href="https://www.youtube.com/watch?v=BNKF4G0gC48" data-toggle="lightbox">
                                     <img src="/img/thumb/healthcare.jpg" class="img-responsive"></a></p>
-                            <!--<h2>Drawings and Paintings</h2>
-                            <p>Coming soon!</p>
-                            <h2>Video Special Effects and Logo Animation</h2>
+                            <h2>Drawings and Paintings</h2>
+                            <div class="gallery">
+                            <p>
+                                <a class="gal-link" href="/img/paintings/EyeSchool.jpg" data-toggle="lightbox">
+                                    <img src="/img/thumb/EyeSchool.jpg" class="img-fluid"></a>
+                                <a class="gal-link" href="/img/paintings/IMG_3316.jpg" data-toggle="lightbox">
+                                    <img src="/img/thumb/IMG_3316.jpg" class="img-fluid"></a>
+                                <a class="gal-link" href="/img/paintings/IMG_1054.jpg" data-toggle="lightbox">
+                                    <img src="/img/thumb/IMG_1054.jpg" class="img-fluid"></a>
+                            </p>
+
+                            </div>
+                            <!--<h2>Video Special Effects and Logo Animation</h2>
                             <a class="gal-link" href="https://www.youtube.com/watch?v=lmZwcyvybv8" data-toggle="lightbox">
     <img src="/img/thumb/HHS.jpg" class="img-fluid">-->
 </a>
