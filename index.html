@@ -27,9 +27,8 @@
                     <ol>
                         <div class="hold">
                         <li><a data-target="#carousel-example-generic" data-slide-to="0" class="active">About Me</a></li>
-                        <li><a data-target="#carousel-example-generic" data-slide-to="1" id="firstport">Team Leader</a></li>
-                        <li><a data-target="#carousel-example-generic" data-slide-to="2">Game of Life</a></li>
-                        <li><a data-target="#carousel-example-generic" data-slide-to="3">Non-web Work</a></li>
+                        <li><a data-target="#carousel-example-generic" data-slide-to="1" id="firstport">Web Design</a></li>
+                        <li><a data-target="#carousel-example-generic" data-slide-to="2">Video Marketing</a></li>
                         </div>
                     </ol>
                 </div>
@@ -50,7 +49,7 @@
                                                 <a class="contact" href="mailto:jkohann@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;jkohann@gmail.com</a></p>
                                                 <a class="contact" href="https://linkedin.com/in/juliankohann"><i class="fa fa-linkedin-square" aria-hidden="true"></i>&nbsp;LinkedIn</a></p>
                                         </div>
-                                        <div class="resources-up"><div class="col-lg-12 col-md-12 col-sm-12">
+                                        <div class="resp-lg"><div class="col-lg-12 col-md-12 col-sm-12">
                                             <p class="btnRegion"><a href="resume.pdf" class="panelBtn" target="_blank"><i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;&nbsp;Resume</a><br/>
                                             <a href="recommendationLetter.pdf" class="panelBtn" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;&nbsp;Letter of<br/>Recommendation</a></p>
                                         </div></div>
@@ -111,7 +110,7 @@
                                            </ul>
                                         </div>
                                     </div>
-                                    <div class="resources-down">
+                                    <div class="resp-sm">
                                         <div class="col-lg-12 col-md-12 col-sm-12 hidden-sm-up">
 
                                             <p class="btnRegion"><a href="resume.pdf" class="panelBtn" target="_blank"><i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;&nbsp;Resume</a><br/>
@@ -127,27 +126,41 @@
                     </div>
                     <div class="item">
                       <div class="work">
-                            <h2 class="up">Team Leader / UI Developer</h2>
-                            <div class="displayImg img-responsive center-block">
-                            <img src="/img/Abet.jpg" alt="ABET Assistant" /></div>
-                            <h2 class="down">Team Leader / UI Developer</h2>
+                            <h2>Team Leader / UI Developer</h2>
+                            <div class="displayContainer">
+                                <div class="displayImg">
+                                    <a class="visit" target="_blank" href="https://abet.herokuapp.com">Demo</a>
+                                    <img src="/img/web/Abet.jpg" alt="ABET Assistant" />
+                                </div>
+                            </div>
                             <p><span class="desy">
-                                <p>During my final year at university, I was selected to lead a four-person senior design team to create the ABET Assistant, a user interface designed to assist the professor responsible for overseeing the collection of accreditation data across the Electrical Engineering and Computer Science department. I was also responsible for the design of the entire front end. The goal of this project was to simplify a tedious and unorganized accreditation process each professor had to complete using excel files, which had to be managed by our client.  We created an interface for professors to enter their data in a manageable way, so that our client could sort through this data using a relational database, which he much preferred. The front end was made with Bootstrap and jQuery, and the backend was built using the Django web framework. The tool was considered a great success and was moved into production in December 2016.</p>
+                                <p>During my final year at university, I was recruited to design a web application to be used by the entire Electrical Engineering and Computer Science department. The goal of this project was to simplify a tedious and unorganized accreditation process each professor had to complete using excel files, which had to be managed by my client. I created an interface for professors to enter their data in a manageable way, so that our client could sort through this data using a relational database, which he much preferred. The front end was made with Bootstrap and jQuery, and the backend was built using the Django web framework. The tool was considered a great success and was moved into production in December 2016.</p>
                             </span></p>
-                            <p class="btnRegion visit"><a class="panelBtn" target="_blank" href="https://abet.herokuapp.com">View Demo</a></p>
                             <div style="clear:both;"></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="work">
-                            <h2 class="up">The Game of Life</h2>
-                            <div class="displayImg img-responsive center-block">
-                            <img src="/img/gameCanv.jpg" alt="Game of life" /></div>
-                            <h2 class="down">The Game of Life</h2>
+
+                            <h2>A Photography Portfolio</h2>
+                            <div class="displayContainer">
+                                <div class="displayImg">
+                                    <a class="visit" target="_blank" href="https://blane-schwindt-photography.herokuapp.com">Demo</a>
+                                    <img src="/img/web/Blane.jpg" alt="ABET Assistant" />
+                                </div>
+                            </div>
+                            <p><span class="desy">
+                                <p>Blane Schwindt is a passionate photographer who needed a portfolio for his work that would organize as his work grew, and present his photos in a navigable way for clients. Using angularJS and node.js I designed and implemented this site that organizes around a file structure of photos, so he could focus markets by providing dedicated samples based on client requirements. He was very happy with the result, and will be publishing soon. Thanks Blake!</p>
+                            </span></p>
+                            <div style="clear:both;"></div>
+
+                            <h2>The Game of Life</h2>
+                            <div class="displayContainer">
+                                <div class="displayImg">
+                                    <a class="visit" target="_blank" href="https://gameoflife.xyz">Visit</a>
+                                    <img src="/img/web/game.jpg" alt="Game of life" />
+                                </div>
+                            </div>
                             <p>
                                 John Conway's <i>Game of Life</i> is a simple computational experiment with fascinating results, and a devoted community. However, the leading web-playgrounds available are unpleasant to look at and difficult to use. I built gameoflife.xyz using HTML5 Canvas to provide a better place to experiment with this complex system, and to understand the set of rules that can be used to create a universal Turing machine. It is intended for demonstrative and causal purposes, and has a number of features that assist with explanation and experimentation.
                             </p>
-                            <p class="btnRegion visit"><a class="panelBtn" target="_blank" href="https://gameoflife.xyz">Visit this site</a></p>
+                            <p class="btnRegion visit"></p>
                             <div style="clear:both;"></div>
                         </div>
                     </div>
@@ -168,7 +181,8 @@
                             <p>In my final semester of college, I worked with the Bernie Sanders Campaign, and my hometown community theater to produce this PSA. The goal was to encourage people to consider healthcare in America from a different perspective. I wrote, produced, and directed the PSA, and with the help of my brother, Adrian Kohann, turned this into a reality.</p>
                                 <p class="imgwrapper"><a class="gal-link" href="https://www.youtube.com/watch?v=BNKF4G0gC48" data-toggle="lightbox">
                                     <img src="/img/thumb/healthcare.jpg" class="img-responsive"></a></p>
-                            <h2>Drawings and Paintings</h2>
+
+                            <!--<h2>Drawings and Paintings</h2>
                             <div class="gallery">
                             <p>
                                 <a class="gal-link" href="/img/paintings/EyeSchool.jpg" data-toggle="lightbox">
@@ -179,7 +193,7 @@
                                     <img src="/img/thumb/IMG_1054.jpg" class="img-fluid"></a>
                             </p>
 
-                            </div>
+                            </div>-->
                             <!--<h2>Video Special Effects and Logo Animation</h2>
                             <a class="gal-link" href="https://www.youtube.com/watch?v=lmZwcyvybv8" data-toggle="lightbox">
     <img src="/img/thumb/HHS.jpg" class="img-fluid">-->
