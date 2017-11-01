@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>link-arrow-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-500.000000, -46.000000)" fill="#2E323C">
+            <g id="Dark" transform="translate(500.000000, 0.000000)">
+                <g id="Link-Arrow" transform="translate(0.000000, 46.000000)">
+                    <path d="M8.75337669,6.99835025 L6.27213607,9.29300605 C5.87693847,9.68394741 5.87693847,10.3158526 6.27213607,10.706794 C6.66833417,11.0977353 7.30965483,11.0977353 7.70485243,10.706794 L11.5557779,7.06034095 C11.841921,6.77638354 12,6.40143978 12,5.99950007 C12,5.59856022 11.841921,5.22161676 11.5557779,4.93965905 L7.70485243,1.29320602 C7.30965483,0.90226466 6.66833417,0.90226466 6.27213607,1.29320602 C5.87693847,1.68314753 5.87693847,2.31605259 6.27213607,2.70699395 L8.75137569,4.9986502 L1.00050025,4.9986502 C0.448224112,4.9986502 0,5.44658301 0,5.99850022 C0,6.55041744 0.448224112,6.99835025 1.00050025,6.99835025 L8.75337669,6.99835025 Z" id="Arrow-Right-Icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
