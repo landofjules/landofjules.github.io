@@ -1723,6 +1723,21 @@ figcaption {
   padding-left: 16px;
 }
 
+.link-arrow.soft-button {
+  padding-right: 17px;
+  padding-left: 17px;
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0, .13);
+  -webkit-transition: background-color 500ms ease, padding 250ms ease;
+  transition: background-color 500ms ease, padding 250ms ease;
+}
+
+.link-arrow.soft-button:hover {
+  padding-right: 20px;
+  background-color: rgba(0, 0, 0, .23);
+  background-image: none;
+}
+
 .service-side-image {
   position: relative;
   width: 91.666666%;
@@ -5906,6 +5921,34 @@ figcaption {
   padding-left: 20%;
 }
 
+.link-back {
+  position: fixed;
+  top: 89px;
+  margin-left: 19px;
+}
+
+.link-back.color-2 {
+  z-index: 100;
+  margin-left: 5%;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 35px;
+  border-radius: 100px;
+  background-image: url('../images/arrow-left.svg');
+  background-position: 14px 50%;
+  background-size: 16px;
+  background-repeat: no-repeat;
+  box-shadow: 0 3px 14px 1px rgba(66, 25, 25, .36);
+  -webkit-transition: background-position 300ms cubic-bezier(.165, .84, .44, 1), padding 300ms ease, margin 300ms ease;
+  transition: background-position 300ms cubic-bezier(.165, .84, .44, 1), padding 300ms ease, margin 300ms ease;
+}
+
+.link-back.color-2:hover {
+  margin-left: 4.5%;
+  padding-left: 38px;
+  background-position: 10px 50%;
+}
+
 html.w-mod-js *[data-ix="preloader"] {
   display: block;
 }
@@ -7057,6 +7100,13 @@ html.w-mod-js *[data-ix="float-subcribe-card"] {
     padding-right: 55px;
     padding-left: 55px;
   }
+  .link-back.color-2 {
+    z-index: 100;
+    margin-left: 15px;
+  }
+  .link-back.color-2:hover {
+    margin-left: 10px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -7910,6 +7960,11 @@ html.w-mod-js *[data-ix="float-subcribe-card"] {
   }
   .float-card {
     display: none;
+  }
+  .link-back.color-2 {
+    top: 75px;
+    -webkit-transition-timing-function: cubic-bezier(.645, .045, .355, 1), ease, ease;
+    transition-timing-function: cubic-bezier(.645, .045, .355, 1), ease, ease;
   }
 }
 
