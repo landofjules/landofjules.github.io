@@ -6022,8 +6022,8 @@ figcaption {
 }
 
 .referral-node {
-  min-width: 30%;
-  margin: 14px 15px;
+  width: 30%;
+  margin: 14px 15px 12px;
   padding-top: 2px;
   padding-bottom: 18px;
   border-radius: 15px;
@@ -6036,25 +6036,64 @@ figcaption {
 .referral-node-heading {
   margin-top: 16px;
   margin-bottom: 0px;
+  padding-right: 9px;
+  padding-left: 9px;
+  font-size: 28px;
+  line-height: 34px;
 }
 
-.price {
-  background-image: -webkit-linear-gradient(270deg, rgba(235, 231, 245, .5), rgba(235, 231, 245, .5));
-  background-image: linear-gradient(180deg, rgba(235, 231, 245, .5), rgba(235, 231, 245, .5));
+.referral-price {
+  display: inline-block;
+  width: 50%;
+  background-image: -webkit-linear-gradient(270deg, rgba(198, 252, 202, .5), rgba(198, 252, 202, .5));
+  background-image: linear-gradient(180deg, rgba(198, 252, 202, .5), rgba(198, 252, 202, .5));
   font-family: Vollkorn, serif;
-  color: #60457c;
+  color: #457c49;
   font-weight: 700;
-  text-transform: uppercase;
+}
+
+.referral-price.null {
+  color: #bde7cb;
 }
 
 .referral-status {
-  margin: 28px 36px 11px;
+  margin: 14px 36px 2px;
   padding: 9px;
   border-radius: 9px;
   background-image: -webkit-linear-gradient(270deg, #f34568, #f34568);
   background-image: linear-gradient(180deg, #f34568, #f34568);
   box-shadow: inset 0 2px 8px 0 rgba(0, 0, 0, .19);
   color: #fff;
+}
+
+.referral-status.color-no-contact {
+  background-image: -webkit-linear-gradient(270deg, #9096a4, #9096a4);
+  background-image: linear-gradient(180deg, #9096a4, #9096a4);
+}
+
+.referral-status.color-order-1 {
+  background-image: -webkit-linear-gradient(270deg, #ff753e, #ff753e);
+  background-image: linear-gradient(180deg, #ff753e, #ff753e);
+}
+
+.referral-status.color-order-2 {
+  background-image: -webkit-linear-gradient(270deg, #ffa535, #ffa535);
+  background-image: linear-gradient(180deg, #ffa535, #ffa535);
+}
+
+.referral-status.color-order-3 {
+  background-image: -webkit-linear-gradient(270deg, #329eff, #329eff);
+  background-image: linear-gradient(180deg, #329eff, #329eff);
+}
+
+.referral-status.color-won {
+  background-image: -webkit-linear-gradient(270deg, #0dd290, #0dd290);
+  background-image: linear-gradient(180deg, #0dd290, #0dd290);
+}
+
+.referral-status.color-lost {
+  background-image: -webkit-linear-gradient(270deg, #f34568, #f34568);
+  background-image: linear-gradient(180deg, #f34568, #f34568);
 }
 
 .circle-progress-container {
@@ -6083,7 +6122,7 @@ figcaption {
   flex: 0 auto;
   border: 1px solid #fff;
   border-radius: 12px;
-  opacity: 0.58;
+  opacity: 0.75;
   color: hsla(0, 0%, 100%, .62);
   line-height: 0px;
 }
@@ -6105,13 +6144,104 @@ figcaption {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
+}
+
+.text-block-6 {
+  display: inline-block;
+}
+
+.email-block {
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 5px 18px;
+  border-radius: 30px;
+  background-image: -webkit-linear-gradient(270deg, #fff, #fff);
+  background-image: linear-gradient(180deg, #fff, #fff);
+  box-shadow: 0 2px 8px 0 rgba(144, 150, 164, .53);
+}
+
+.emails {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100px;
+  padding: 10px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  border: 2px dotted #e1e3ea;
+  border-radius: 15px;
+}
+
+.referral-node-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border-top: 1px dashed #e1e3ea;
+  border-bottom: 1px dashed #e1e3ea;
+}
+
+.text-block-7 {
+  display: inline-block;
+}
+
+.referral-date {
+  display: inline-block;
+  width: 50%;
+  background-image: -webkit-linear-gradient(270deg, rgba(191, 226, 253, .5), rgba(191, 226, 253, .5));
+  background-image: linear-gradient(180deg, rgba(191, 226, 253, .5), rgba(191, 226, 253, .5));
+  font-family: Vollkorn, serif;
+  color: #145ea0;
+  font-weight: 700;
+}
+
+.referral-date.null {
+  color: #bad4eb;
+}
+
+.referral-node-company {
+  color: #9096a4;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 300;
+}
+
+.referral-node-product {
+  margin-top: 5px;
+  color: #7567f8;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.div-block-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 html.w-mod-js *[data-ix="preloader"] {
@@ -7272,6 +7402,19 @@ html.w-mod-js *[data-ix="float-subcribe-card"] {
   .link-back.color-2:hover {
     margin-left: 10px;
   }
+  .referral-node {
+    width: 45%;
+  }
+  .emails {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
 }
 
 @media (max-width: 767px) {
@@ -8130,6 +8273,11 @@ html.w-mod-js *[data-ix="float-subcribe-card"] {
     top: 75px;
     -webkit-transition-timing-function: cubic-bezier(.645, .045, .355, 1), ease, ease;
     transition-timing-function: cubic-bezier(.645, .045, .355, 1), ease, ease;
+  }
+  .referrals {
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
   }
 }
 
@@ -9025,6 +9173,25 @@ html.w-mod-js *[data-ix="float-subcribe-card"] {
   .portriat-image-wrapper {
     padding-right: 10%;
     padding-left: 10%;
+  }
+  .referral-node {
+    width: 90%;
+  }
+  .referral-price {
+    width: 50%;
+  }
+  .referral-status.color-order-3 {
+    background-image: -webkit-linear-gradient(270deg, #329eff, #329eff);
+    background-image: linear-gradient(180deg, #329eff, #329eff);
+  }
+  .email-block {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  .emails {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 
