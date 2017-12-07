@@ -1378,6 +1378,7 @@ figcaption {
 .footer-v1-column.hide {
   display: block;
   opacity: 0;
+  color: #5d6371;
 }
 
 .footer-v1-column-text {
@@ -6022,10 +6023,19 @@ figcaption {
 }
 
 .referral-node {
+  display: block;
   width: 30%;
   margin: 14px 15px 12px;
   padding-top: 2px;
   padding-bottom: 18px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   border-radius: 15px;
   background-image: -webkit-linear-gradient(270deg, #fff, #fff);
   background-image: linear-gradient(180deg, #fff, #fff);
@@ -6057,8 +6067,22 @@ figcaption {
 }
 
 .referral-status {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 58px;
   margin: 14px 36px 2px;
   padding: 9px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border-radius: 9px;
   background-image: -webkit-linear-gradient(270deg, #f34568, #f34568);
   background-image: linear-gradient(180deg, #f34568, #f34568);
@@ -6144,10 +6168,10 @@ figcaption {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;

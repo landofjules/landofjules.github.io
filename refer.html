@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Thu Dec 07 2017 08:47:28 GMT+0000 (UTC)  -->
+<html data-wf-page="59ff0054d4ae9c0001bf4d2b" data-wf-site="59b0e696a3ad6100019b38fc">
+<head>
+  <meta charset="utf-8">
+  <title>Refer</title>
+  <meta content="Know someone who would like to develop a web app? Earn 10% of a 4-5 figure deal. Julian Kohann is a UX Designer and Project Manager, who enjoys taking ideas, and turning them to life." name="description">
+  <meta content="Refer" property="og:title">
+  <meta content="Know someone who would like to develop a web app? Earn 10% of a 4-5 figure deal. Julian Kohann is a UX Designer and Project Manager, who enjoys taking ideas, and turning them to life." property="og:description">
+  <meta content="summary" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/macro-template.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic","Vollkorn:400,400italic,700,700italic","Raleway:100,regular"]  }});</script>
+  <script src="https://use.typekit.net/msd5nka.js" type="text/javascript"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/icons8-saturn-planet.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
+  <style>
+		#getRefsBtn:focus {
+    	outline: 0;
+  	}
+    /* The starting CSS styles for the enter animation */
+.referral-node.ng-enter {
+  transition:0.4s ease-out all;
+  transform:translateY(-30px);
+  opacity:0;
+}
+.referral-node.ng-enter-stagger {
+  /* this will have a 100ms delay between each successive leave animation */
+  transition-delay: 0.1s;
+  /* As of 1.4.4, this must always be set: it signals ngAnimate
+    to not accidentally inherit a delay property from another CSS class */
+  transition-duration: 0s;
+  /* if you are using animations instead of transitions you should configure as follows:
+    animation-delay: 0.1s;
+    animation-duration: 0s; */
+}
+/* The finishing CSS styles for the enter animation */
+.referral-node.ng-enter.ng-enter-active {
+  transform:translateY(0);
+  opacity:1;
+}
+</style>
+</head>
+<body class="body">
+  <div data-ix="preloader" class="page-loader"></div>
+  <div data-ix="page-wrapper-load" class="page-wrapper">
+    <div class="popup-wrapper">
+      <div class="contact-window popup-window w-form">
+        <h4 class="contact-window-header">Get In Touch</h4>
+        <form id="email-form" name="email-form" data-name="Email Form" class="contact-window-form"><label for="name" class="form-label">Name:</label><input type="text" id="name" name="name" data-name="Name" placeholder="Enter your name" maxlength="256" class="input w-input"><label for="email-2" class="form-label">Email:</label><input type="email" class="input w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Enter your email address" id="email-2" required=""><label for="field" class="form-label">Message:</label><textarea id="field" name="field" placeholder="How can we help you?" maxlength="5000" required="" data-name="Field" class="input text-area w-input"></textarea><input type="submit" value="Submit Message" data-wait="Please wait..." class="button form-button w-button"></form>
+        <div class="form-success window-success w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="form-error window-error w-form-fail">
+          <div>Oops! Something went wrong while submitting the form</div>
+        </div>
+      </div>
+      <div data-ix="hide-popup" class="popup-overlay"></div>
+    </div>
+    <div data-collapse="medium" data-animation="default" data-duration="400" data-ix="nav-bar" class="nav-bar white w-nav">
+      <div class="wrapper nav-bar-wrapper w-container"><a href="index.html" data-ix="logo" class="logo-link w-nav-brand"><img src="images/Julian-Macro-Logo.png" height="24" class="logo"><div class="logo-line"></div></a>
+        <div class="logo-text">UX Designer &amp; Project Manager</div>
+        <nav role="navigation" class="nav-menu w-nav-menu"><a href="index.html" class="nav-link w-nav-link">Home</a><a href="#Services" class="nav-link w-nav-link">Start</a><a href="#progress" class="nav-link w-nav-link">Progress</a></nav>
+        <div class="menu-button w-nav-button">
+          <div class="w-icon-nav-menu"></div>
+        </div>
+      </div>
+    </div>
+    <div class="section grey-section">
+      <div class="section-header-wrapper">
+        <div class="section-small-header">Affiliate Marketing</div>
+        <h2 class="section-header">Earn up to $400 just for a conversation</h2>
+        <p class="section-description">Know someone who needs to develop an app or a website? Fill out the form below. If we land the deal, you will receive 10% of the total deal price up to $400.</p>
+      </div>
+      <div class="wrapper w-container">
+        <h1>Get Started</h1>
+        <div class="pipedrive-form w-embed w-script">
+          <div class="pipedriveWebForms" data-pd-webforms="https://pipedrivewebforms.com/form/7a994eb052aa140790aa1272db74ad1f2134543">
+            <script src="https://webforms.pipedriveassets.com/webforms.min.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="progress" ng-app="refApp" class="section grey-section">
+      <div ng-controller="mainCtrl" class="container w-container">
+        <div class="section-header-wrapper">
+          <div class="section-small-header">progress</div>
+          <h2 class="section-header">Check on your referrals</h2>
+          <div class="w-form">
+            <form id="email-form-2" name="email-form-2" data-name="Email Form 2" class="view-referral-form">
+              <div class="form-label">login Email</div><input type="email" class="input w-input" maxlength="256" autofocus="true" name="ref-email-check" data-name="ref-email-check" placeholder="Enter your email" ng-model="referrerEmail" id="ref-email-check" required=""><input type="submit" value="Submit" data-wait="Please wait..." id="getRefsBtn" ng-click="getRefs()" class="button w-button"></form>
+            <div class="w-form-done">
+              <div>Thank you! Your submission has been received!</div>
+            </div>
+            <div class="w-form-fail">
+              <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+          </div>
+        </div>
+        <div ng-show="refs.length &gt; 0" class="referrals">
+          <div ng-repeat="x in refs | removeNonPublicStages | orderBy:&#x27;-stage_info.order&#x27;" class="referral-node">
+            <h3 class="referral-node-heading">{{x.person_name}}</h3>
+            <div ng-show="x.org_name != null" class="referral-node-company">{{ x.org_name }}</div>
+            <div class="referral-node-product">{{x.title.replace(&quot;[REF] &quot;, &quot;&quot;)}}</div>
+            <div class="referral-node-info">
+              <div ng-class="{null:x.nopay}" class="referral-price">{{x.payout}}</div>
+              <div ng-class="{null:x.nodate}" class="referral-date">{{x.delivery_date}}</div>
+            </div>
+            <div ng-class="x.stage_info.color_class" class="referral-status">
+              <div>{{x.stage_info.web_desc}}</div>
+              <div ng-show="x.stage_info.order != -1" class="circle-progress-container">
+                <div ng-class="{active:(x.stage_info.order==1)}" class="circle"></div>
+                <div ng-class="{active:(x.stage_info.order==2)}" class="circle"></div>
+                <div ng-class="{active:(x.stage_info.order==3)}" class="circle"></div>
+                <div ng-class="{active:(x.stage_info.order==4)}" class="circle"></div>
+                <div ng-class="{active:(x.stage_info.order==5)}" class="circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section no-top-padding no-bottom-padding">
+      <div class="wrapper w-container">
+        <div class="footer-v1">
+          <div class="footer-v1-logo-column">
+            <a href="index.html" data-ix="logo" class="footer-logo w-nav-brand">
+              <div class="logo">Julian Kohann</div>
+              <div class="logo-line"></div>
+            </a>
+          </div>
+          <div class="footer-v1-column hide">
+            <h6>Social</h6>
+            <div class="footer-v1-column-text">LinkedIn</div>
+          </div>
+          <div class="footer-v1-column">
+            <h6>Phone</h6>
+            <div class="footer-v1-column-text">(818) 464-6436</div>
+          </div>
+          <div class="footer-v1-column">
+            <h6>Email</h6><a href="mailto:test@test.com?subject=Hello!" class="footer-grey-link">jkohann@gmail.com</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <script>
+		// classes Email, Email Block
+		var app = angular.module('refApp', ["ngAnimate"]);
+    app.run(function() {
+      $("#email-form-2").submit(function(event) {
+        // prevent form from submiting
+        event.preventDefault();
+        return false;
+      });
+    });
+		app.filter('removeNonPublicStages', function() {
+			return function(input) {
+				var output = [];
+				for(var i=0; i < input.length; i++) {
+					if(input[i].stage_id !== 7) {
+						output.push(input[i]);
+					}
+				}
+				return output;
+			}
+		});
+		app.controller('mainCtrl', function($scope, $http) {
+			$scope.refs = [];
+			$scope.referrerEmail = "";
+	    $scope.getRefs = function() {
+	    	// weird trick to use native form validation with ajax
+	    	var form = $("#email-form-2");
+        if(!form[0].checkValidity()) {
+            $('<input type="submit">').hide().appendTo(form).click().remove();
+            return;
+        }
+	    	// get list of deals belonging to referrer email
+	    	$http.get("https://pipedrive-referal.herokuapp.com/api/deals?referrer_email=" + encodeURIComponent($scope.referrerEmail)).then(function(response) {
+		    	$scope.refs = response.data.deals;
+          $scope.refs.forEach(function(val) {
+            // set payout
+            if(val.value === 0) {
+              val.payout = "payout";
+              val.nopay = true;
+            }
+            else {
+              if(val.value > 4000) {
+                val.payout = "$400";
+              }
+              else {
+                val.payout = "$" + Math.floor(val.value / 10);
+                val.nopay = false;
+              }
+            }
+            // set delivery date
+            if(val["e51b56dcb96fa8c2d4a83a1fb4eabda85627ce1b"] === null) {
+              val.nodate = true;
+              val.delivery_date = "delivery date";
+            }
+            else {
+              var date = new Date(val["e51b56dcb96fa8c2d4a83a1fb4eabda85627ce1b"]);
+              val.delivery_date = (date.getMonth() + 1) + '/' + date.getDate() + '/' + date.getFullYear();
+              val.nodate = false;
+            }
+            // set color
+            val.color_class = val.stage_info.color_class;
+          });
+      	}, 
+      	function(response) {
+      		console.log("Error:", response.data);
+      	});
+	    };
+		});
+</script>
+</body>
+</html>
